@@ -1,0 +1,32 @@
+{
+  "name": "genpark-agent-prompt-injection-sanitizer-firewall-skill",
+  "version": "1.0.0",
+  "description": "Heuristic and pattern-based agent prompt injection sanitizer and LLM jailbreak firewall detecting adversarial jailbreaks, system prompt exfiltration, and tool hijacking.",
+  "category": "Service",
+  "author": "AlphaPark",
+  "tags": [
+    "prompt-injection",
+    "jailbreak-firewall",
+    "llm-security",
+    "rebuff",
+    "mcp"
+  ],
+  "tools": [
+    {
+      "name": "scan_prompt_safety",
+      "description": "Scan input prompt for injection, delimiter overrides, and exfiltration."
+    },
+    {
+      "name": "sanitize_untrusted_input",
+      "description": "Sanitize and neutralize adversarial payloads within untrusted data."
+    },
+    {
+      "name": "inspect_tool_call_safety",
+      "description": "Verify tool call arguments against command, SQL, and path injection."
+    },
+    {
+      "name": "run_firewall_benchmark",
+      "description": "Run comprehensive prompt injection firewall test suite."
+    }
+  ]
+}
